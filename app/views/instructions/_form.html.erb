@@ -1,0 +1,39 @@
+<%= form_with(model: instruction, local: true) do |form| %>
+  
+  <div class="row">
+    <div class="col">
+      <div class="field">
+        <label>Prioridade</label>
+        <%= form.text_field(:priority, :class => '') %>
+      </div>
+    </div>
+    <div class="col">
+      <div class="field">
+        <label>Tipo de Preparo</label>
+
+        <%= form.text_field :instruction_type %>
+
+        <%# <%= form.select(:city_id) do %> 
+          <%# <% [['Lisbon', 1], ['Madrid', 2]].each do |c| -%> 
+            <%# <%= content_tag(:option, c.first, value: c.last) %> 
+          <%# <% end %> 
+        <%# <% end %> 
+
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="field">
+        <label>Descrição do Preparo</label>
+        <%= form.text_area(:content, :id => 'instruc-input') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit("Salvar", :class => 'btn-action') %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+<div class="home-container">
+<div class="import-block">
+<%= form_tag(import_instructions_path, multipart: true, class: 'form-inline import-form', id: 'import-instruc-form') do %>
+  <label id="import-label" class="btn custom-input-btn">
+    <a href='/instructions.csv' style="float: left;" class="title">Exportar Preparos</a>
+  </label>
+<% end %>
+</div>
+
+<div class="import-block">
+<%= form_tag(import_exams_path, multipart: true, class: 'form-inline import-form', id: 'import-exams-form') do %>
+  <label id="import-label" class="btn custom-input-btn">
+    <a href='/exams.csv' style="float: left;" class="title">Exportar Exames</a>
+  </label>
+<% end %>
+</div>
+</div>

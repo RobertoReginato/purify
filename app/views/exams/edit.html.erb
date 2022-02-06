@@ -1,0 +1,7 @@
+<%= render 'form', exam: @exam %>
+
+<script>
+  $(document).on("turbolinks:load", function() {
+    window.skynet.exams.exams_init();
+  });
+</script>

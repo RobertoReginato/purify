@@ -1,0 +1,277 @@
+// Place all the styles related to the Exams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bp-smaller-than-mobile   : "max-width: 360px" !default;
+$bp-larger-than-mobile    : "min-width: 500px" !default;
+$bp-smaller-than-phablet  : "max-width: 500px" !default;
+$bp-smaller-than-tablet   : "max-width: 750px" !default;
+$bp-smaller-than-full-hd  : "max-width: 1030px" !default;
+ html {
+   height: 100%;
+   // background: #000 url("https://www.transparenttextures.com/patterns/grid-dots.png") top right; 
+  //  background: #000;
+   background-attachment: fixed;
+  //  overflow: hidden;
+  }
+
+.import-block {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+body {
+  color: #f7f8fc;
+  background: transparent;
+  // background-image: url("https://www.transparenttextures.com/patterns/grid-dots.png") !important;
+  
+  height: 100%;
+}
+
+.tags {
+  color: #c00;
+  .header{
+    display: none;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100% !important;
+  }
+
+  .title {
+    font-size: 18px;
+    // background: #fff;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 10px 0 rgba(0, 122, 206, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px !important;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    float: left;
+    margin: 10px;
+  }
+
+  a.title:active {
+    background: #f0f2f9;
+  }
+
+  // h2.title {
+  //   margin-top: 40px;
+  // }
+  
+  .header {
+    margin: 0 !important;
+  }
+  
+  .content {
+    width: 60vw;
+    height: 100% !important;
+    margin: 5px auto;
+  }
+
+  .title {
+    width: 220px !important;
+  }
+  
+  .logo {
+    vertical-align: middle;
+    align-content: center;
+    margin: auto !important;
+    width: 85px;
+    justify-self: center;
+  }
+  
+  .navbar-logo {
+    width: 100%;
+    height: 100px;
+    vertical-align: middle;
+    // background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 122, 206, 0.1);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .import-model-link {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .import-model-link:hover {
+    text-decoration: underline !important;
+  }
+
+  .smart-container {
+      padding: 0 15px !important;
+  }
+
+  .exam-card, .instruction-card {
+    min-height: 40px;
+    // background: #fff;
+    padding: 0 10px !important;
+    border-radius: 5px;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 122, 206, 0.1);
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .instruction-content {
+    padding: 10px 0 !important;
+    width: -webkit-fill-available;
+    float: left;
+  }
+
+  .delete-instruc {
+    width: 5%;
+    float: right;
+    line-height: 40px;
+    text-align: right;
+  }
+
+  .exam-card {
+      background: #f0f2f9;
+      display: flex;
+      align-items: center;
+  }
+
+  .exam-card:hover {
+    // background: #fff;
+    cursor: default;
+  }
+  
+  .exam-name {
+    float: left;
+    width: 70%;
+    vertical-align: middle;
+    text-align: left;
+    flex-grow: 1;
+
+    a {
+      padding: 10px 0 !important;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .area {
+    font-size: 15px;
+    margin-bottom: -5px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+  }
+
+  .instruction-card, .exam-card {
+    text-transform: lowercase !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .instruction-content::first-letter, .exam-name::first-letter {
+    text-transform: uppercase !important;
+  }
+
+  .clear {
+      clear: both;
+  }
+
+  .exam-title {
+    .exam-name {
+      font-size: 26px;
+      line-height: 42px;
+      font-weight: bold;
+      width: auto !important;
+    }
+    .area {
+      font-size: 26px;
+      float: left;
+      margin-left: 10px;
+      line-height: 42px;
+      text-transform: capitalize;
+    }
+  }
+
+  .btn-edit, .btn-delete {
+    font-size: 13px;
+    // background: #0000FC11;
+    // border-radius: 10px;
+    // width: 15px;
+    // height: 15px;
+    display: block;
+    // color: #ffffff7f;
+  }
+
+  .btn-delete {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 7px !important;
+    background:rgb(173, 25, 37);
+  }
+
+  @media (#{$bp-smaller-than-full-hd}) {
+    .content {
+      width: 80vw;
+    }
+
+    .search-box > .exam-card {
+      margin: 5px 0 !important;
+    }
+  }
+
+  @media (#{$bp-smaller-than-phablet}) {
+    .content {
+      width: 95vw !important;
+    }
+  }
+}
+
+// .tags.index > .header > 
+.back {
+  display: none !important;
+}
+
+.edit {
+  .instruction-card, .exam-card {
+    font-size: 16px !important;
+  }
+
+  .instruction-card-actions {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background: #f0f2f9;
+    font-size: 30px;
+    text-transform: none;
+    width: 25% !important;
+    margin: auto;
+
+    a {
+      margin-right: 20px;
+    }
+  }
+
+  .search-action-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

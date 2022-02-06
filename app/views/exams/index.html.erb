@@ -1,0 +1,53 @@
+<% flash.each do |key, value| %>
+  <div class="<%= flash_class(key) %>">
+    <%= value %>
+  </div>
+<% end %>
+
+<h2 class="title">Exames</h2>
+
+<%= form_tag(exams_path, method: :get, class: 'form-container', enforce_utf8: false) do %>
+		<div class="row align-items-center">
+			<div class="col title">
+					<div class="input-group search-box">
+            <input id="search-input" name="search" class="exam-card form-control search-input" type="text" value="Nome ou mnemônico" autocomplete="off"/>
+						<input type=submit class="input-group-textv search-icon" value="" />
+					</div>
+        </div>
+		</div>
+	<% end %>
+
+ <% @exams.each do |exam| %>
+   <% unless exam[1].name.blank? %>
+     <div class="exam-card">
+       <div class="exam-name">
+         <%= link_to exam[1].name.downcase, edit_exam_path(exam[1]) %> 
+      </div>
+       <div class="area">
+        <%= exam[1].short_name %>
+        | <%= exam[1].area.downcase %> 
+      </div>
+      <div class="clear"></div>
+    </div>
+   <% end %> 
+ <% end %> 
+<br />
+
+<div class="pagination-container">
+  <div class="digg_pagination">
+    <%= will_paginate @exams, 
+      :container => false,
+      :previous_label => '', 
+      :next_label => '', 
+      :outer_window => 0, 
+      :inner_window => 1 %>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<script>
+$(document).on("turbolinks:load", function() {
+  window.skynet.exams.exams_init();  
+});
+</script>

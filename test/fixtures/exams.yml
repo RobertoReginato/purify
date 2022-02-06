@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  area: MyString
+  instructions: 
+  short_name: MyString
+  requires_responsible: false
+
+two:
+  name: MyString
+  area: MyString
+  instructions: 
+  short_name: MyString
+  requires_responsible: false

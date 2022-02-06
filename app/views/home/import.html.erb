@@ -1,0 +1,55 @@
+<div class="home-container">
+<div class="import-block">
+  <%= form_tag(import_instructions_path, multipart: true, class: 'form-inline import-form', id: 'import-instruc-form') do %>
+    <label id="import-label" class="btn custom-input-btn title">
+      <input id="imported-instructions" type="file" name="file" style="display:none" accept="*" multiple>        
+      <i class="fa fa-cloud-upload"></i> Importar Preparos
+    </label>
+  <% end %>
+  <%= form_tag(import_instructions_path, multipart: true, class: 'form-inline import-form', id: 'import-instruc-form') do %>
+    <a href='/model_instruc' style="float: left;" class="import-model-link">baixar modelo_preparos.csv</a>
+  <% end %>
+</div>
+
+  <br />
+  <br />
+<div class="import-block">
+  <%= form_tag(import_exams_path, multipart: true, class: 'form-inline import-form', id: 'import-exams-form') do %>
+    <label id="import-label" class="btn custom-input-btn title">
+      <input id="imported-exams" type="file" name="file" style="display:none" accept="*" multiple>        
+      <i class="fa fa-cloud-upload"></i> Importar Exames
+    </label>
+  <% end %>
+  <%= form_tag(import_instructions_path, multipart: true, class: 'form-inline import-form', id: 'import-instruc-form') do %>
+    <a href='/model_exam' style="float: left;" class="import-model-link">baixar modelo_exames.csv</a>
+  <% end %>
+</div>
+
+<div class="import-block">
+  <%= form_tag(import_tags_path, multipart: true, class: 'form-inline import-form', id: 'import-tags-form') do %>
+    <label id="import-label" class="btn custom-input-btn title">
+      <input id="imported-tags" type="file" name="file" style="display:none" accept="*" multiple>        
+      <i class="fa fa-cloud-upload"></i> Importar Tags
+    </label>
+  <% end %>
+  <%= form_tag(import_instructions_path, multipart: true, class: 'form-inline import-form', id: 'import-instruc-form') do %>
+    <a href='/model_exam' style="float: left;" class="import-model-link">baixar modelo_exames.csv</a>
+  <% end %>
+</div>
+
+<div class="import-block">
+  <%= form_tag(import_books_path, multipart: true, class: 'form-inline import-form', id: 'import-books-form') do %>
+    <label id="import-label" class="btn custom-input-btn title">
+      <input id="imported-books" type="file" name="file" style="display:none" accept="*" multiple>        
+      <i class="fa fa-cloud-upload"></i> Importar Livros
+    </label>
+  <% end %>
+</div>
+
+</div>
+
+<script>
+  $(document).on("turbolinks:load", function() {
+    window.skynet.exams.import_init();
+  });
+</script>

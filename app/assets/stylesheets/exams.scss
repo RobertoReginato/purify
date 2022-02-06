@@ -1,0 +1,179 @@
+// Place all the styles related to the Exams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bp-smaller-than-mobile   : "max-width: 360px" !default;
+$bp-larger-than-mobile    : "min-width: 500px" !default;
+$bp-smaller-than-phablet  : "max-width: 500px" !default;
+$bp-smaller-than-tablet   : "max-width: 750px" !default;
+$bp-smaller-than-full-hd  : "max-width: 1030px" !default;
+
+.exams {
+
+  h2.title {
+    margin-top: 40px;
+  }
+  
+  .header {
+    margin: 0 !important;
+    height: 100px;
+  }
+  
+  .content {
+    width: 60vw;
+    margin: auto;
+  }
+  
+  .logo {
+    vertical-align: middle;
+    align-content: center;
+    margin: auto !important;
+    width: 85px;
+    justify-self: center;
+  }
+  
+  .navbar-logo {
+    width: 100%;
+    height: 100px;
+    vertical-align: middle;
+    box-shadow: 0 0 10px 0 rgba(0, 122, 206, 0.1);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .smart-container {
+      padding: 0 15px !important;
+  }
+
+  .exam-card, .instruction-card {
+    min-height: 40px;
+    padding: 0 10px !important;
+    border-radius: 5px;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 122, 206, 0.1);
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .instruction-content {
+    padding: 10px 0 !important;
+    width: -webkit-fill-available;
+    float: left;
+  }
+
+  .delete-instruc {
+    width: 5%;
+    float: right;
+    line-height: 40px;
+    text-align: right;
+  }
+
+  .exam-card {
+      display: flex;
+      align-items: center;
+  }
+
+  .exam-card:hover {
+
+    cursor: default;
+  }
+  
+  .exam-name {
+    float: left;
+    width: 70%;
+    vertical-align: middle;
+    text-align: left;
+    flex-grow: 1;
+
+    a {
+      padding: 10px 0 !important;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .area {
+    font-size: 15px;
+    margin-bottom: -5px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+  }
+
+  .instruction-card, .exam-card {
+    text-transform: lowercase !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .instruction-content::first-letter, .exam-name::first-letter {
+    text-transform: uppercase !important;
+  }
+
+  .clear {
+      clear: both;
+  }
+
+  .exam-title {
+    .exam-name {
+      font-size: 26px;
+      line-height: 42px;
+      font-weight: bold;
+      width: auto !important;
+    }
+    .area {
+      font-size: 26px;
+      float: left;
+      margin-left: 10px;
+      line-height: 42px;
+      text-transform: capitalize;
+    }
+  }
+
+  @media (#{$bp-smaller-than-full-hd}) {
+    .content {
+      width: 80vw;
+    }
+
+    .search-box > .exam-card {
+      margin: 5px 0 !important;
+    }
+  }
+
+  @media (#{$bp-smaller-than-phablet}) {
+    .content {
+      width: 100vw !important;
+    }
+  }
+}
+
+.edit {
+  .instruction-card, .exam-card {
+    font-size: 16px !important;
+  }
+
+  .instruction-card-actions {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 30px;
+    text-transform: none;
+    width: 25% !important;
+    margin: auto;
+
+    a {
+      margin-right: 20px;
+    }
+  }
+
+  .search-action-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

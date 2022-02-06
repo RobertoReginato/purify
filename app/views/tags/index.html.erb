@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<%# <h1>tags</h1> %>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tags.each do |tag| %>
+      <% if tag.name? %>
+        <tr>
+          <%# <td><%= tag.name %> 
+          <%# <%= tag.description %>
+          <%# </td> %>
+
+          <%# <%= form.text_field(:name, :class => '') %>
+          <%# <%= form.text_field(:description, :class => '') %>
+
+          <%# <td> %>
+          <%# <%= link_to 'Show', tag %>
+          <%# </td> %>
+          <td><%= link_to tag.name + " / " + tag.description, edit_tag_path(tag), class: "btn-edit" %></td>
+          <td><%= link_to 'delete', tag, class: "btn-delete", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'new_tag', new_tag_path %>

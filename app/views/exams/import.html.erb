@@ -1,0 +1,42 @@
+<%= form_tag(import_instructions_path, multipart: true, class: 'form-inline import-form', id: 'import-instruc-form') do %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <label id="import-label" class="btn custom-input-btn">
+    <input id="imported-instructions" type="file" name="file" style="display:none" accept="*" multiple>        
+    <i class="fa fa-cloud-upload"></i> Importar Preparos
+  </label>
+<% end %>
+
+<%= form_tag(import_exams_path, multipart: true, class: 'form-inline import-form', id: 'import-exams-form') do %>
+  <%# <div class="form-group">
+    <%= link_to "Export CSV", exams_path(format: "csv"), class: 'btn btn-primary' %>
+  <%# </div> %>
+  <%# <div class="form-group"> %>
+    <%# <%= file_field_tag :file, class: '', value: 'teste' %> 
+  <%# </div> %>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <%# <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> %>
+
+  <label id="import-label" class="btn custom-input-btn">
+    <input id="imported-exams" type="file" name="file" style="display:none" accept="*" multiple>        
+    <i class="fa fa-cloud-upload"></i> Importar Exames
+  </label>
+
+  <%# <div class="form-group"> %>
+    <%# <%= submit_tag "Importar Exames", class: 'btn btn-info btn-import' %>
+  <%# </div> %>
+<% end %>
+
+<%= form_tag(import_tags_path, multipart: true, class: 'form-inline import-form', id: 'import-exams-form') do %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <label id="import-label" class="btn custom-input-btn">
+    <input id="imported-exams" type="file" name="file" style="display:none" accept="*" multiple>        
+    <i class="fa fa-cloud-upload"></i> Importar Tags
+  </label>
+<% end %>
+
+<script>
+  $(document).on("turbolinks:load", function() {
+    window.skynet.exams.import_init();
+  });
+</script>

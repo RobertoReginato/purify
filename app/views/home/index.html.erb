@@ -1,0 +1,132 @@
+<div class="main-menu">
+<br />
+<br />
+<br />
+<br />
+</div>
+
+<div class="menu main-menu">
+  <div class="left">
+
+    <a class="" href="<%= appointments_path %>">
+      <div class="btn-view">
+        <%= embedded_svg "032-calendar.svg", class: 'pin-icon' %>
+      </div>
+    </a>
+  </div>
+  <div class="middle">
+    <a class="" href="/import">
+      <div class="btn-view">
+        <%= embedded_svg "023-folder.svg", class: 'pin-icon' %>
+      </div>
+    </a>
+  </div>
+  <div class="right">
+    <a class="" href="/tags">
+      <div class="btn-view" href="/tags">
+        <%= embedded_svg "010-user.svg", class: 'pin-icon' %>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div id="black-canvas"></div>
+<div id="back-dot-grid"></div>
+<div id="particles"></div>
+<canvas id="voronoi"></canvas>
+<canvas id="screenSystemElem"></canvas>
+<canvas id="circular-menu"></canvas>
+<canvas id="discovery"></canvas>
+<canvas id="nodeCon"></canvas>
+<canvas id="rain-meter"></canvas>
+
+<canvas id="canvashover" width="200" height="200"></canvas>
+
+<div id="main-content">
+ 
+  <div class="header">
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+  </div>
+  <div class="container-box">
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content">
+        <div class="log-list-container">
+          <ul class="log-list">
+            <% @tags.each_with_index do |tag, i| %>
+              <% if tag.name? %>
+                <% if list_item_opacity(i, @tags.size) == 1 %>
+                  <li style="opacity: <%= list_item_opacity i, @tags.size %>" class="selected" id="<%= tag.id %>">
+                <% else %>
+                  <li style="opacity: <%= list_item_opacity i, @tags.size %>" id="<%= tag.id %>">
+                <% end %>
+                  <%= link_to 'x', tag, class: "btn-delete", method: :delete, data: { confirm: 'confirm data removal:' } %>
+                  <%# <%= link_to "#" + i.to_s.encrypt + " : " + tag.name.encrypt, edit_tag_path(tag), class: "btn-edit" %>
+                  <%= link_to tag.name, edit_tag_path(tag), class: "btn-edit", id: tag.id %>
+                  <%# <%= link_to " : " + tag.description.encrypt, edit_tag_path(tag), class: "btn-edit" %>
+                </li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+    <div class="box a">
+      <div class="box-content"></div>
+    </div>
+  </div>
+</div>
+<div class='grid-limits'>
+  <canvas id='plusigns' class='plus-signs-grid'>
+  </canvas>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item back-0"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+</div>
+
+<%= render 'controls_menu' %>
+
+<script>
+$(document).on("turbolinks:load", function() {
+  window.skynet.exams.exams_init();  
+  window.skynet.discovery.discovery_framework_init();
+  window.skynet.porsche.porsche_wheel_init();
+  var arr = [];
+  var iterations = 0;
+  var full_iterations = 0;
+  var repeat = true;
+});
+</script>

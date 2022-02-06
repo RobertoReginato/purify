@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h2 class="title">Preparos</h2>
+<br />
+
+<div class="clear"></div>
+
+<% unless @exam.blank? %>
+  <%= form_with(model: @exam, local: true, method: "update") do |form| %>
+
+  <div class="actions">
+      <%= form.submit("Vincular", :class => 'btn-action') %>
+    </div>
+  <% end %>
+<% end %>
+
+<% @instructions.each do |instruc| %>
+  <% unless instruc[1].content.blank? %>
+    <div class="exam-card">
+      <div class="exam-name">
+        <%= link_to instruc[1].content.downcase, edit_instruction_path(instruc) %>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <% end %>
+<% end %>
+<br />
+
+<div class="pagination-container">
+  <div class="digg_pagination">
+    <%= will_paginate @exams, 
+      :container => false, 
+      :previous_label => '', 
+      :next_label => '', 
+      :outer_window => 0, 
+      :inner_window => 1 %>
+  </div>
+</div>

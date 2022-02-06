@@ -1,0 +1,166 @@
+ID_P,ID_T,DESCRICAO,IDADE,SEXO,GESTANTE OU SUSPEITA,PESO
+1,1,"Caso apresente dificuldade respiratória (ex. Asma em fase aguda, portadores de DPOC -Doença Pulmonar Obstrutiva Crônica, fizer uso de suporte de oxigênio para respirar ou doenças cardíacas descompensadas, ou diabetes em uso de insulina), o exame não será realizado;",,,,
+,,Esse exame não é realizado em gestante;,,F,X,
+,,Para realização do exame é importante que o peso do cliente não ultrapasse 110Kg; ,,,,Até 110 kg
+2,1,Limite de peso para realização do exame é de 139 Kg; ,Acima de 5 anos,,,Até 139 Kg
+,,"O exame não poderá ser realizado após exames com uso de contraste, pois deverá ter um intervalo de 7 dias;",Acima de 5 anos,,,
+,,Clientes grávidas ou com suspeita de gravidez não poderão realizar o exame;,Acima de 5 anos,,X,
+3,1,Clientes alérgicos a contraste iodado;,,,,
+,,Clientes que possuem DIU;,,F,,
+,,Clientes com corrimento;,,F,,
+,,Clientes gestantes ou com suspeita de gravidez sem teste de BHCG dos últimos 2 dias em mãos;,,,X,
+4,1,Limite de peso para o exame 115 kg,,,,Até 115 Kg
+5,1,"Portadores de marca-passo;
+Clipes de aneurisma cerebral; 
+Clientes portadores de filtro de cava ou stent, nas 3 primeiras semanas após colocação; 
+Clientes portadores de prótese de ouvido só poderão realizar o exame mediante apresentação da carta do médico informando que a prótese é de teflon;
+Portadores de metal intraocular (exceto lente intraocular); 
+Portadores de placas, parafusos ou prótese de metal (Titânio ou não), prótese intraocular e prótese de ouro na pálpebra pode realizar o exame, mas se o objeto estiver na área a ser analisada, poderá interferir na qualidade da imagem e o exame pode ser suspenso pelo médico radiologista;
+Paciente em realização de diálise não poderão fazer uso do contraste;",,,,
+,,Gestantes no 1º trimestre;,,,X,
+,,"Gestantes após 2º trimestre, em caso de RM não fetais é necessário a apresentação de uma  autorização do médico solicitante;",,,X,
+101,2,"Alergia a ovo;
+Pessoas que apresentaram reações alérgicas/ alergias graves ocorridas devido á administração da vacina gripe (Influenza, H1N1);
+Febre;",,,,
+,,"Gestantes podem ser vacinadas após o 1° trimestre (a partir do 4° mês de gestação), para vacina da Febre Amarela deverá apresentação solicitação médica.",,,X,
+,,Mulheres amamentando,,F,,
+102,2,"Para o exame com anestesia/sedação endovenosa,  o cliente não pode estar com gripe, febre, tosse, crise asmática, bronquite - Nestas Condições remarcar exame;
+Solicitação médica de mais de 24 fragmentos, consultar equipe médica;
+Múltiplas doenças associadas, consultar equipe médica.",,,,
+201,3,"Caso tenha tatuagem recente, aguardar 15 dias para realizar o exame;
+Se o paciente possui gesso no segmento a ser estudado, o mesmo deverá entrar em contato com o médico solicitante para verificar a possibilidade de retirada do gesso no dia do exame e a sua posterior colocação, pois não é possível a realização da ressonância magnética com gesso. Se o cliente possuir somente faixa, o exame poderá ser realizado normalmente.",,,,
+202,3,"Cliente de preferência deve tomar banho próximo ao horário da colocação do aparelho, voltando a fazê-lo somente após a sua retirada;
+É necessário retornar ao laboratório em 24 horas após ter instalado o equipamento para início do exame, para conclusão do exame, retirada e devolução do equipamento, seguindo rigorosamente o horário estipulado pelo setor.",,,,
+203,3,"Vacina aplicada somente pela unidade Premium;
+Horário de atendimento de segunda à sexta das 06:30h às 17h e sábado das 8h às 12h;
+Não é necessário agendamento prévio;
+Não é obrigado a apresentação de pedido médico;
+Preferencialmente trazer a carteirinha de vacinação, caso não tenha forneceremos uma.",,,,
+204,3,"Seguir corretamente o preparo, caso contrário o exame pode ser remarcado;
+Após o exame o cliente não poderá dirigir, devendo permanecer em repouso o resto do dia;",,,,
+,,Clientes que estiverem amamentando deve ter um intervalo de 6 horas para amamentar novamente;,,F,,
+205,3,"Não há necessidade de jejum;
+Necessário acompanhante;",,,,
+301,4,Não urinar nas 2 horas que antecedem o exame;,,,,
+302,4,Se o cliente for alérgico a Buscopan ® (Escopolamina) fazer jejum absoluto de 12 horas;  Não urinar nas 2 horas que antecedem o exame;,,,,
+303,4,"Realizar o preparo apenas se constar no pedido médico a solicitação de preparo intestinal.
+A) Na véspera do exame: Água de coco, Gatorade®, purê de batata, arroz branco, gelatina sem pedaços de frutas, pão francês, bolacha de água e sal, picolé de frutas, suspiros, sopa magra coada de caldo de carne ou frango (sem sólidos), macarrão com molho vermelho ou alho e óleo (sem carne ou queijo ralado), alimentos com leite e derivados, verduras cruas, bagaço de fruta, salada de folhas, frituras, feijões, grão de bico, milho, lentilha, ervilha, sementes e similares não podem ser consumidos nesse dia.
+B) No dia do exame: Além da dieta, a cliente terá que tomar um comprimido de DUCOLAX® às 8 h e outro às 14h. Caso o medicamento cause cólicas ou dores abdominais, é possível fazer uso de BUSCOPAN SIMPLES ®, por via oral, na dose  de um comprimido ou então 30 gotas. Cerca de 1h antes do exame é necessário proceder a limpeza do intestino baixo, denominado retossigmoide, com o uso de uma BISNAGA DE PHOSFOENEMA®, aplicada por via retal de acordo com as instruções contidas na bula do produto. O objetivo dessa etapa é limpar o retossigmoide dos resíduos fecais habitualmente presentes nessa porção do intestino, uma vez que podem prejudicar a qualidade de algumas imagens.  Preferencialmente fazer essa parte do preparo no laboratório, já que o produto não causa dores abdominais importantes. Pois o cliente deverá estar na recepção da unidade de atendimento com 1h de antecedência  do horário marcado para o exame, levando consigo a bisnaga para aplicação, que pode ser adquirida em qualquer farmácia, a aplicação não deve ser realizada com mais de 1h de antecedência do horário agendado. Não é necessário ingerir líquidos antes do exame, uma vez que a bexiga deve estar vazia para esta avaliação. A dieta pobre em resíduos dever ser mantida também no dia do exame.",,,,
+304,4,"No dia do exame não ingerir café, chá ou bebida alcóolica, no dia do exame utilizar roupas de botões (tipo camisa);",,,,
+305,4,"Pacientes portadores de expansor mamário, deve trazer o manual do fabricante e modelo. Alguns expansores não são compatíveis com RM, por exemplo o NATRELE 133 ®;
+Para avaliação de glândula mamária o uso do contraste é obrigatório, exceto para avaliação de prótese mamária fica a critério do cliente a utilização do contraste, porém o uso do mesmo é muito importante para um diagnóstico preciso.",,F,,
+306,4,"Portadores de placas, parafusos ou prótese de metal (Titânio ou não), prótese intraocular e prótese de ouro na pálpebra pode realizar o exame, mas se o objeto estiver na área a ser analisada, poderá interferir na qualidade da imagem e o exame pode ser suspenso pelo médico radiologista;",,,,
+307,4,"ATENÇÃO: Antes do exame todos os pacientes serão avaliados pela equipe de enfermagem e médica, em caso de alguma condição de risco for encontrada, haverá a possibilidade do exame não poder ser realizado;
+Na véspera do exame, cliente pode fazer alimentação sólida (alimentação leve) até ás 21:00 horas e pode fazer alimentação líquida (água) até ás 24:00 horas após esse horário não se alimentar ou ingerir líquidos; 
+Para exames marcados pela manhã: Jejum absoluto no dia do exame. Para clientes anti-hipertensivos, tomar medicamentos com pouca água; 
+Preparo para os exames realizados no período da tarde: Realizar somente o café da manhã às 07:30h, poderá ingerir chá, café com duas torradas, sem leite. Após às 07:30h jejum de alimentos sólidos, podendo ingerir agua até 2 h antes do exame;",,,,
+308,4,"O cliente deverá comparecer à unidade com o pedido médico original, documento com foto e carteirinha do convênio,  para a retirada do preparo e do manitol, medicamento utilizado em casa para o preparo do intestino, de 3 a 5 dias antes da data marcada para a realização do exame;
+ O uso do Manitol é obrigatório para a realização do exame, esse é um medicamento para o preparo do exame que não é vendido em farmácia, por este motivo o mesmo deverá ser retirado nas unidades em horário comercial.
+Atenção: Não será entregue com mais de 5 dias de antecedência da data do exame; ",,,,
+,,Informamos que o Laboratório {Nome_Marca} não realiza Colonoscopia com Anuscopia.,,,,
+309,4,"Fazer alimentação leve, a base de carne magra, frango ou peixe (cozida ou grelhada), massas (macarrão com molho de tomate coado sem casca ou semente, pão, etc.), suco coado, arroz com caldo de feijão, deve evitar verduras, frutas com casca ou bagaço, leites e derivados;",,,,
+310,4,Abstinência sexual após o 1º dia do ciclo menstrual;,,F,,
+311,4,"Manter jejum de mais ou menos 3 h, não realizar a última mamada e trazer a mamadeira;",Até 6 meses,,,
+,,Jejum de 3h e trazer mamadeira;,de 6 meses a 1 ano,,,
+,, Tomar 30 gotas de LUFTAL ®  1h antes do exame e fazer jejum de 4h podendo fazer ingestão de água apenas;,De 4 a 8 anos,,,
+,, Tomar 60 gotas de LUFTAL ®  1h antes do exame e fazer jejum de 6h podendo fazer ingestão de água apenas;,De 8 a 12 anos,,,
+,, Tomar 100 gotas de LUFTAL ®  1h antes do exame e fazer jejum de 8h podendo fazer ingestão de água apenas;,Acima de 12 anos,,,
+312,4, Não tomar a última mamada e vir fazer o exame com a mamadeira;,Até 2 anos,,,
+,, Jejum de 4h e tomar 2 copos de água 1h antes do exame e reter urina;,Até 10 anos,,,
+,, Jejum 6h e tomar 4 copos de água 1h antes do exame e reter a urina;,Acima de 11 anos,,,
+,,"Quando realizar este exame junto com exames de urina ou que necessite que a bexiga esteja vazia, é necessário realizar primeiro os exames de bexiga vazia, após o término deste exame começar o preparo hídrico (intervalo de aproximadamente 1 hora e 30 minutos entre os exames);",,,,
+313,4,Não tomar a última mamada e vir fazer o exame com a mamadeira;,Até 2 anos,,,
+,, Jejum de 4h;,Até 10 anos,,,
+,, Jejum 6h;,Acima de 11 anos,,,
+314,4,"Jejum absoluto de 8h quando procedimentos com anestesia;
+Tomar 4 copos de água uma hora antes do exame e reter a urina. 
+Quando realizar este exame junto com exames de urina ou que necessite que a bexiga esteja vazia, é necessário realizar primeiro os exames de bexiga vazia, após o término deste exame começar o preparo hídrico (intervalo de aproximadamente 1 hora e 30 minutos entre os exames).
+Exame realizado somente com pedido médico com anestesia/sedação endovenosa
+Exame realizado no laboratório em regime ambulatorial até os 70 anos;
+Tempo de permanência no Laboratório em média 3 horas, mas podendo se estender, se necessário;
+Jejum absoluto de 8 horas (apenas para procedimento com anestesia/sedação endovenosa);",,,,
+401,5,"Não tomar medicamentos para tontura ou Labirintite;
+Não suspender os medicamentos para doenças do coração, diabetes e pressão;",,,,
+501,6,"Não tomar chá preto, chá mate, café, chocolate, bebida alcóolica;",,,,
+601,7,"No dia da realização do exame não utilizar gel e estar com o cabelo seco;
+Usar roupa íntima de algodão e não usar tecidos sintéticos;
+É necessário comparecer sem maquiagem, bem como sem joias, brincos, pingentes e recomenda-se a retirada de piercings;
+Para realização do exame, poderá utilizar roupa que não contenha metal, por exemplo, moletom, malha ou nylon,  caso contrário o setor disponibilizará uma roupa privativa adequado para realização do exame;",,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+602,7,"No dia do exame, não fumar e não ingerir café ou refrigerante;",,,,
+603,7,"Fazer refeições leves até 2h antes do exame, não comparecer em jejum;
+Não usar creme no rosto, maquiagem e lentes de contato;
+Chegar com 40 minutos de antecedência do horário marcado; 
+",,,,
+604,7,Não fazer uso de esmalte nas unhas;,,,,
+605,7,No dia do exame utilizar roupa sem zíper e botões; ,,,,
+606,7,Levar no dia do exame resultado de Papanicolau recente (últimos 30 dias) sem sinais de infecção;,,F,,
+607,7,"Cliente com idade superior a 60 anos ou com histórico de Hipertensão Arterial e/ou problemas cardiovasculares (Independente da idade), devem trazer no dia do exame carta do cardiologista liberando a realização de anestesia ou sedação endovenosa;",,,,
+701,8,"Não suspender medicações, sem autorização médica;",,,,
+702,8,"Cliente deve suspender a critério médico, o uso continuo de Ácido Acetilsalicílico (ASPIRINA ® OU AAS ®) e outros anticoagulantes 5 dias antes e após o exame;",,,,
+703,8,Ingerir normalmente os medicamentos que faça uso;,,,,
+704,8,"HIPOGLICEMIANTES devem ser suspensos no dia do exame;
+Outros medicamentos podem ser ingeridos normalmente;
+Caso o cliente utilize anticoagulantes ou anticoagulantes plaquetários deve suspender cinco dias antes do exame, (com autorização prévia do médico que o prescreveu).
+Caso esteja utilizando o medicamento CLOPIDOGREL (ANTI AGREGANTE), o exame deverá ser realizado em ambiente hospitalar;",,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+705,8,"Suspender somente no dia do exame, medicamentos que contém CÁLCIO;",,,,
+706,8,"Tomar 40 gotas de Luftal® (não pode ser Espasmoluftal) a cada 6 horas, iniciando 24 horas antes do exame, e a última dose tomar antes de sair de casa para vir ao laboratório, podendo tomar um pouco de água.
+Tomar às 17h do dia anterior, 2 (dois) comprimidos de Dulcolax® por via oral (observação: o Dulcolax poderá trazer efeitos adversos como: diarreia, cólicas e enjoo). Caso o paciente seja alérgico ao Dulcolax® o mesmo poderá ser substituído por Lacto-Purga® 5mg. ",,,,
+707,8,"Atenção:
+As suspensões dos medicamentos devem ocorrer após consultar o seu médico;
+Suspender por 15 dias: PERSANTIN ®, PLAVIX ®, TICLID ®, medicamentos fitoterápicos, como GINKGO BILOBA ® e CASCARA SAGRADA ®. 
+Suspender por 10 dias: BUFERIN ® e TRENTAL ®;
+Suspender por 7 dias:  AAS ® e AAS INFANTIL ®, MAREVAN ®, SOMALGIN ®
+No dia do exame: Não tomar hipoglicemiante oral e insulina. Clientes estarão liberados para fazer uso desses medicamentos após o exame ao ser orientados a quebrar o jejum;
+Medicações para Hipertensão Arterial não deverão ser suspensas;
+Na véspera do exame:
+Tomar 1 comprimido de Ciprofloxacino de 500mg via oral 12 horas antes da biópsia, receituário será fornecido pela unidade;
+No dia do exame:
+Tomar 1 comprimido de Ciprofloxacino de 500 mg via oral, 2 horas antes de realizar o exame.
+Aplicar 1 Fleet Enema ou Minilax ou Enemaplex via retal (apenas para procedimentos com anestesia/sedação endovenosa) 1 hora antes de sair de casa, para realizar o exame. A aplicação não é realizada no CDB.
+Após o Exame:
+Tomar 1 comprimido de Ciprofloxacino de 500mg via oral de 12 em 12 horas durante 6 dias no total de 14 comprimidos. (o médico orientará os horários).
+Tomar medicações para hipertensão arterial normalmente;
+Não tomar hipoglicemiante oral nem insulina no dia do exame, o paciente vai tomar após quebra do jejum.
+Suspender por 07 dias  Anticoagulante e Antiagregantes Plaquetários, AAS e AAS infantil, Marevan, Somalgin, Clopidogrel, Marcoumar
+Suspender por 10 dias- Buferin, Trental.
+Suspender por 15 dias- Persantin, Plavix, Ticlid, medicamentos fitoterápicos (Ginkgo Biloba e Cascara sagrada).
+As suspensões dos medicamentos devem ocorrer após consultar seu médico.",,,,
+708,8,"Suspender a critério médico, o uso de  ASPIRINAS (AAS) e anticoagulantes 5 dias antes do exame; ",,,,
+801,9,"Trazer exames e biópsias anteriores caso tenha.
+Caso possua exames de sangue recente (últimos 3 meses) com valores de ureia e creatinina é importante apresentar no dia do exame, porém caso tenha doença renal a apresentação desses exames realizados nos últimos 30 dias são obrigatórios.",,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+802,9,"Trazer exames anteriores recentes de Retossigmoidoscopia, Colonoscopia, Enema Opaco, Trânsito Intestinal ou outros exames anteriores relacionados; 
+",,,,
+803,9,"É obrigatório enviar/levar 7 dias antes por e-mail (procedimentos@cdb.com.br) ou ir até a unidade, os exames  mais recentes de: Hemograma, Coagulograma (se o paciente fizer uso de anticoagulante, deverá trazer no dia do exame, resultado do Coagulograma realizado até 2 dias antes da biopsia), Urina e Urocultura (exames solicitados pelo seu médico) os quais devem ter sido realizados até 90 dias antes do dia da biópsia;
+Trazer resultado do PSA o mais recente. (Sem o resultado do PSA não será possível realizar o exame);
+Trazer exames anteriores, Ultrassonografia de Próstata abdominal ou transretal e biópsias anteriores;",,,,
+804,9,Trazer exames anteriores,,,,
+901,10,"Cliente deve vir trajando blusa ou camisa confortáveis, de manga larga, com botões que possam ser abertos na frente para a aplicação e ajuste do equipamento com facilidade e conforto;
+Obrigatório trazer um cinto (não pode ser o que estiver usando, precisa ser um cinto exclusivo para o aparelho) para a fixação do monitor. ",,,,
+902,10,"No dia do exame utilizar roupas de botões, como por exemplo camisa;",,,,
+1001,11,"jejum de 1 hora e trazer chupeta, mamadeira, bolacha ou outro lanche que a criança esteja habituada e goste muito; ",Até 3 anos,,,
+,,"não tem preparo, apenas trazer no dia do exame mamadeira, bolacha ou outro lanche que a criança esteja habituada e goste muito;",De 4 a 8 anos,,,
+,,"devem vir com acompanhante (maior de idade), caso contrário o exame não será realizado;",De 8 a 18 anos,,,
+1002,11,"Deverão comparecer com um adulto responsável portanto documentos oficiais com foto, caso contrário o exame não poderá ser realizado;",De 8 a 18 anos,,,
+1101,12,Jejum de 2h;,Até 14 anos,,,
+,,Jejum de 6h;,Acima de 14 anos,,,
+,, No dia do exame: Jejum absoluto de 6 horas;,,,,
+1102,12,Jejum de 2h;,,,,
+1103,12,"No dia do exame jejum de 4h, exceto água
+
+",,,,

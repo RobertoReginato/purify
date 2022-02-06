@@ -1,0 +1,83 @@
+<%= form_with(model: exam, local: true) do |form| %>
+  <% if exam.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(exam.errors.count, "error") %> prohibited this exam from being saved:</h2>
+
+      <ul>
+      <% exam.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <br />
+  <div class="exam-title">
+    <div class="exam-name" name="name"><%= @exam.name.downcase %></div>
+    <div class="area"> - <%= @exam.short_name %> - <%= @exam.area.downcase %></div>
+    <div class="clear"></div>
+  </div>
+  <br />
+
+  <%# <br />
+  <div class="field"> %>
+    <%# <%= form.check_box :requires_responsible %>
+    <%# <span><b>Responsável deverá estar presente.</b></span> %>
+    <%# <div class="clear"></div>
+  </div>
+  <br /> %>
+
+  <h3 class="title">Preparos</h3>
+
+  <% exam.instructions.each do |instruc| %>
+    <div class="instruction-card">
+      <div class="instruction-content">
+        <%= instruc.content %>
+      </div>
+          <%= link_to 'x', edit_exam_path(:delete_instruc_id => instruc.id), class: "btn-close" %>
+      <div class="clear"></div>
+    </div>
+  <% end %>
+  <br />
+
+  <h3 class="title">Adicionar preparos</h3>
+
+  <div class="row align-items-center">
+    <div class="col title">
+      <div class="input-group search-box">
+        <input id="search-input" name="search" class="form-control search-input" type="text" value="Tipo ou parte da descrição preparo" autocomplete="off"/>
+        <%# <%= link_to '', edit_exam_path, id: "search-instruct", class: "input-group-textv search-icon" %>
+        <%= form.submit("", :id => 'search-instruct', :class => 'input-group-textv search-icon') %>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <% unless @instructions.blank? %>
+    <% @instructions.each do |instruction| %>
+      <div class="exam-card">
+        <div class="exam-name">
+          <%= instruction.content %>
+        </div>
+          <%= link_to '+', edit_exam_path(:insert_instruc_id => instruction.id), class: "btn-close" %>
+        <div class="clear"></div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <br />
+
+  <%# <% if @instructions.blank? %> 
+    <%# <div class="instruction-card instruction-card-actions"> %>
+      <%# <%= link_to 'Novo Preparo', instructions_path(:exam_id => exam.id), id: "add-instruct" %> 
+    <%# </div> %>
+  <%# <% end %> 
+
+  <div class="actions">
+    <%= form.hidden_field :name %>
+    <%= form.hidden_field :short_name %>
+    <%= form.hidden_field :area %>
+    <%= form.hidden_field :instructions %>
+    <%# <%= form.submit("Salvar", :class => 'btn-action') %>
+  </div>
+<% end %>

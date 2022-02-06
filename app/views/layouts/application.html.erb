@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%# <title>skynet</title> %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <script src='http://threejs.org/build/three.min.js'></script> %>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js'></script>
+    <%# <script src='/app/assets/javascripts/exams.js'></script>
+    <script src='/app/assets/javascripts/discovery_framework.js'></script> %>
+
+  </head>
+
+  <body class="<%= controller_name %> <%= action_name %>">
+    <div class="header">
+      <div class="back">
+        <a class="back-img" href="/" alt="Voltar" title="Voltar"></a>
+        <a class="" href="/" alt="Voltar" title="Voltar"></a>
+      </div>
+      <%# <div class="navbar-logo"> %>
+        <%# <%= image_tag "cdb.png", class: 'logo' %>
+        <%# <h2 class='logo'>skynet</h2> %>
+			<%# </div> %>
+      <ul class="menu">
+        <li>
+          <a href="/export">
+            agenda
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            arquivos
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            pacientes
+          </a>
+        </li>
+        <li class="push">
+          <div class="loged-user-wrap">
+            <%# <%= embedded_svg "tooth.svg", class: 'tooth-icon' %>
+          </div>
+          user.admin
+        </li>
+        <br class="clear" />
+      </ul>
+    </div>
+    <div class="content">
+      <%= yield %>
+      <br /><br />
+      <%# <footer>momberger.reginato</footer> %>
+      <div style="display: none">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+      <div style="display: none">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+    </div>
+    <div id="cursor">
+      <div id="circle-big"></div>
+      <div id="circle"></div>
+    </div>
+  </body>
+
+</html>

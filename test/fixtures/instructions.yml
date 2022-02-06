@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  age_restriction: MyString
+  gender_restriction: 
+  pregnancy_restriction: false
+  weight_restriction: MyString
+  type: 
+
+two:
+  content: MyText
+  age_restriction: MyString
+  gender_restriction: 
+  pregnancy_restriction: false
+  weight_restriction: MyString
+  type: 

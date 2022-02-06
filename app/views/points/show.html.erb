@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>X cord:</strong>
+  <%= @point.x_cord %>
+</p>
+
+<p>
+  <strong>Y cord:</strong>
+  <%= @point.y_cord %>
+</p>
+
+<p>
+  <strong>Z cord:</strong>
+  <%= @point.z_cord %>
+</p>
+
+<%= link_to 'Edit', edit_point_path(@point) %> |
+<%= link_to 'Back', points_path %>

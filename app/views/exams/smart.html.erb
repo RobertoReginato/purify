@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<div class="smart-container">
+  <h2 class="title">Exames</h2>
+
+  <% @exams.each do |exam| %>
+    <div class="exam-card">
+      <div class="exam-name"><%= exam.name.downcase %></div>
+      <div class="area"><%= exam.short_name %> | <%= exam.area.downcase %></div>
+      <div class="clear"></div>
+    </div>
+  <% end %>
+
+  <h2 class="title">Preparos</h2>
+
+  <% @instructions.each do |instruc| %>
+    <div class="instruction-card">
+      <div class="instruction-content">
+        <%= instruc.content %>
+        <div style="display:none">
+        <b><%= instruc.instruction_type %></b> - 
+        <b><%= instruc.id_at_alliar %></b>
+        <b><%= instruc.id %></b>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <h2 class="title">Contra indicações</h2>
+  <span>Não existem.</span>
+  <br />
+  <br />
+</div>

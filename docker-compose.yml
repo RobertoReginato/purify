@@ -1,0 +1,23 @@
+web:
+  build: .
+  ports: ["3022:3022"]
+  tty: true
+  stdin_open: true
+  expose: ["3022"]
+  environment:
+    - RAILS_ENV=development
+    - PG_HOST=db
+    - PG_USERNAME=purifier
+    - PG_PASSWORD=password
+  links:
+    - db
+  volumes:
+    - ".:/purifier"
+
+db:
+  image: postgres:10.5
+  environment:
+    POSTGRES_PASSWORD: password
+    POSTGRES_USER: purifier
+  ports: ["5455:5455"]
+  expose: ["5455"]

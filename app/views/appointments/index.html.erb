@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <%# <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead> %>
+
+  <tbody>
+    <% @appointments.each do |appointment| %>
+      <tr>
+        <%# <td><%= link_to 'Show', appointment %>
+        <td>
+          <%= link_to "12/11/2019", edit_appointment_path(appointment) %>
+          <%= link_to "10:00 - 11:00", edit_appointment_path(appointment) %>
+        </td>
+        <%# <td><%= appointment.part_number %>
+        <%# </td> %>
+        <td>
+          <%= link_to "#{appointment.name}", edit_appointment_path(appointment) %>
+          <%= link_to "paciente", edit_appointment_path(appointment) %>
+          <%# <%= link_to "#{appointment.part_number}", edit_appointment_path(appointment) %>
+          <%# <%= link_to "#{appointment.name}", edit_appointment_path(appointment) %>
+        </td>
+
+        <td>
+          <%= link_to "#{appointment.part_number}", edit_appointment_path(appointment) %>
+          <%= link_to "agendamento", edit_appointment_path(appointment) %>
+          <%# <%= link_to "#{appointment.name}", edit_appointment_path(appointment) %>
+        </td>
+
+        <%# <td><%= appointment.name %>
+        <%# </td> %>
+        <%# <td><%= link_to 'Editar', edit_appointment_path(appointment) %>
+        <%# </td> %>
+        <%# <td><%= link_to 'Cancelar', appointment, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%# </td> %>
+
+        <%# <td><%= link_to '', edit_appointment_path(appointment) %>
+        <%# </td> %>
+        <td><%= link_to 'x', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'novo agendamento', new_appointment_path, class: "btn-new-appointment" %>
+
+<canvas id="screenSystemElem"></canvas>
+<canvas id="circular-meu"></canvas>
+
+<script>
+  $(document).on("turbolinks:load", function() {
+    window.skynet.exams.exams_init();
+  });
+</script>
